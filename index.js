@@ -25,6 +25,7 @@ const {
 
 //  *MiddleWares
 app.use(express.json());
+// allowing frontend
 app.use(
   cors({
     origin: "https://damod-app.vercel.app",
