@@ -25,7 +25,13 @@ const {
 
 //  *MiddleWares
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://damod-app.vercel.app/",
+    credentials: true,
+    methods: ["POST", "GET"],
+  })
+);
 
 // app.get("/api/visitingCard/:imageName", (req, res) => {
 //   let { imageName } = req.params;
