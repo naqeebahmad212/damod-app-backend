@@ -27,7 +27,7 @@ const {
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://damod-app.vercel.app/",
+    origin: "https://damod-app.vercel.app",
     credentials: true,
     methods: ["POST", "GET"],
   })
